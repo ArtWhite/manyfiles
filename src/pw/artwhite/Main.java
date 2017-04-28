@@ -16,14 +16,14 @@ public class Main {
         Random randnum = new Random();
 
         File file = new File("intdata.dat");
-        BufferedWriter writeNums = new BufferedWriter(new FileWriter(file));
+        DataOutputStream writeNums = new DataOutputStream(new FileOutputStream(file));
 
-        for (int i = 0; i < 100; i++){
-            writeNums.write(String.valueOf(randnum.nextInt(1000000))+"\r\n");
-        }
+        for (int i = 0; i < 2; i++){
+            writeNums.write(randnum.nextInt(1000000));
+       }
         writeNums.close();
 
-        BufferedReader bufferedReader = new BufferedReader(new FileReader(file));
+
     }
 
 
