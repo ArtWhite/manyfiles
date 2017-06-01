@@ -9,6 +9,13 @@ import java.io.IOException;
  * Created by g15oit18 on 28.04.2017.
  */
 public class Main {
+
+    /**
+     * Метод создает файл intdata.dat
+     *
+     * @param args
+     * @throws IOException
+     */
     public static void main(String[] args) throws IOException {
         File file = new File("intdata.dat");
         DataInputStream dataInputStream = new DataInputStream(new FileInputStream(file));
