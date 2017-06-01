@@ -6,7 +6,7 @@ import java.io.FileInputStream;
 import java.io.IOException;
 
 /**
- * Created by g15oit18 on 28.04.2017.
+ * Created by g15oit18 on 28.04.2017
  */
 public class Main {
 
