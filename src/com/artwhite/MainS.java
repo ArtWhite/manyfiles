@@ -24,8 +24,10 @@ public class MainS {
         DataInputStream dataInputStream = new DataInputStream(new FileInputStream("intdata.dat"));
 
         for (int i = 0; i < 100; i++) {
-            int rndNum = (int) (Math.random() * 1000000);
-            output.writeBytes(rndNum + "\n");
+            int rndNum = 0 + (int) (Math.random() * 1000000);
+            if(rndNum > 1000 & rndNum < 1000000){
+                output.writeBytes(rndNum + "\n");
+            }
             System.out.println(rndNum);
         }
 
