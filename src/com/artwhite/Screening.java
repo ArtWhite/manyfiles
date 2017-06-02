@@ -37,7 +37,7 @@ public class Screening {
      */
     private static void zeroingOut() throws IOException {
         try {
-            FileWriter fstream1 = new FileWriter("int6data.dat");// конструктор с одним параметром - для перезаписи
+            FileWriter fstream1 = new FileWriter("int6data.txt");// конструктор с одним параметром - для перезаписи
             BufferedWriter out1 = new BufferedWriter(fstream1); //  создаём буферезированный поток
             out1.write(""); // очищаем, перезаписав поверх пустую строку
             out1.close(); // закрываем
@@ -81,7 +81,7 @@ public class Screening {
      * @throws IOException
      */
     private static void writeNumInFile(int number) throws IOException {
-        DataOutputStream output = new DataOutputStream(new FileOutputStream("int6data.dat", true));
+        DataOutputStream output = new DataOutputStream(new FileOutputStream("int6data.txt", true));
         output.writeBytes(number + "\n");
         output.close();
     }
